@@ -7,12 +7,12 @@ use Railken\EloquentInstance\HasRelationships;
 
 class Book extends Model
 {
-	use HasRelationships;
+    use HasRelationships;
 
     public function author()
     {
-    	$author = new Author();
-    	$author->setTable('author_custom');
+        $author = new Author();
+        $author->setTable('author_custom');
 
         return $this->belongsTo($author);
     }
