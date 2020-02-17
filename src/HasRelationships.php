@@ -14,7 +14,7 @@ trait HasRelationships
      */
     protected function newRelatedInstance($class)
     {
-        return tap($this->shouldCreateNewInstance($class), function ($instance) {
+        return tap($this->avoidNewIfModel($class), function ($instance) {
             if (! $instance->getConnectionName()) {
                 $instance->setConnection($this->connection);
             }
@@ -27,7 +27,7 @@ trait HasRelationships
      * @param  string  $class
      * @return mixed
      */
-    protected function shouldCreateNewInstance($class)
+    protected function avoidNewIfModel($class)
     {
         if ($class instanceof Model) {
             return $class;
