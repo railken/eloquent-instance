@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/railken/eloquent-instance/workflows/Test/badge.svg)](https://github.com/railken/eloquent-instance/actions)
 
-A simple trait that enables the use of instance of `Model` instead of string/classes. Why? Because otherwise it would be impossible to relate two models that doesn't exist in the code, but only as instances (e.g. stored in db)
+A simple trait that enables the use of instance of `Model` in your relationships. Why? Because otherwise it would be impossible to relate two models that doesn't exist in the code, but only as instances (e.g. stored in db)
 
 ## Requirements
 
