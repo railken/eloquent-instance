@@ -30,12 +30,12 @@ use Railken\EloquentInstance\HasRelationships;
 
 class Author extends Model
 {
-	use HasRelationships;
-	
+    use HasRelationships;
+    
     public function books()
     {
-    	$book = new Book();
-    	$book->setTable('book_custom');
+        $book = new Book();
+        $book->setTable('book_custom');
 
         return $this->hasMany($book);
     }
