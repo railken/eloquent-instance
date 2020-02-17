@@ -1,0 +1,33 @@
+{
+    "name": "railken/eloquent-instance",
+    "type": "library",
+    "keywords": ["laravel", "eloquent-instance"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "orchestra/testbench": "*",
+        "nilportugues/sql-query-formatter": "^1.2"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Railken\\EloquentInstance\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "Railken\\EloquentInstance\\Tests\\": "tests/" 
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Railken\\EloquentInstance\\EloquentInstanceServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
