@@ -22,13 +22,6 @@
             "Railken\\EloquentInstance\\Tests\\": "tests/" 
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Railken\\EloquentInstance\\EloquentInstanceServiceProvider"
-            ]
-        }
-    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
