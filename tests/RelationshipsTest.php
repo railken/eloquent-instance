@@ -5,7 +5,7 @@ namespace Railken\EloquentInstance\Tests;
 use Railken\EloquentInstance\Tests\Models\Book;
 use Railken\EloquentInstance\Tests\Models\Author;
 
-class RelationshipsTest extends BaseTest
+class RelationshipsTest extends Base
 {
     public function testRelationships()
     {
