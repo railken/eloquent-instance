@@ -8,7 +8,7 @@ use Railken\EloquentInstance\HasRelationships;
 class Author extends Model
 {
     use HasRelationships;
-    
+
     public function books()
     {
         $book = new Book();

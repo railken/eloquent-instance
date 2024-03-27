@@ -33,6 +33,6 @@ trait HasRelationships
             return $class;
         }
 
-        return new $class;
+        return new $class();
     }
 }
